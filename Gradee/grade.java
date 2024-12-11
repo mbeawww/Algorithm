@@ -24,7 +24,6 @@ public class grade {
         } else {
             System.out.println("เกรด F");
         }
-
         scanner.close();
     }
 }

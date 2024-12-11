@@ -1,6 +1,9 @@
 package FactorialandFibonanci;
 
+import java.util.Scanner;
+
 public class factorialandfibonanci {
+    Scanner scanIn = new Scanner(System.in);
     static int fact = 1, fibonanci = 0;
     static int a;
     public static int Factorial(int a){
@@ -26,8 +29,14 @@ public class factorialandfibonanci {
     System.out.println("Value of Fibonanci is " + f1);
     return(fibonanci);
     }
-    public static void main(String[] args) {
-    a = 5;
+    public static void maixn(String[] args) {
+        
+        Scanner scanIn = new Scanner(System.in);
+        
+        
+        System.out.print("Enter a number for Factorial and Fibonacci: ");
+        a = scanIn.nextInt();
+
     Factorial(a);
     Fibonanci(a);
     System.out.println(fact);
@@ -35,3 +44,4 @@ public class factorialandfibonanci {
     System.out.println(fact - fibonanci);
     }
     }
+    
