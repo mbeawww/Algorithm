@@ -26,22 +26,23 @@ public class factorialandfibonanci {
     f0 = f1;
     f1 = fibonanci;
     }
-    System.out.println("Value of Fibonanci is " + f1);
     return(fibonanci);
     }
-    public static void maixn(String[] args) {
+    public static void main(String[] args) {
         
         Scanner scanIn = new Scanner(System.in);
         
         
-        System.out.print("Enter a number for Factorial and Fibonacci: ");
-        a = scanIn.nextInt();
+        System.out.print(" ");
+        int a = scanIn.nextInt();  
+        
+        int fact = Factorial(a);  
+        int fibo = Fibonanci(a);   
+        
 
-    Factorial(a);
-    Fibonanci(a);
-    System.out.println(fact);
-    System.out.println(fibonanci);
-    System.out.println(fact - fibonanci);
+        System.out.println("Factorial-Fibonanci = " + (fact - fibo));
+        
+        scanIn.close();  
     }
     }
     

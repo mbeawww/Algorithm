@@ -1,4 +1,4 @@
-package DateMonthYear;
+package CheckDateMonthYear;
 
 import java.util.Scanner;
 
