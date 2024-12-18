@@ -1,16 +1,16 @@
 package GradeCalculate;
 
-import java.util.Random;
+import java.util.Scanner;
 
 public class gradecalculate {
 
     public static void main(String[] args) {
         int[] scores = new int[10];
-        Random rand = new Random();
+        Scanner n = new Scanner(System.in);;
         
         for (int i = 0; i < scores.length; i++) {
      
-            scores[i] = rand.nextInt(60) + 40;
+            scores[i] = n.nextInt(60) + 40;
             System.out.println("Score of student " + (i + 1) + " is " + scores[i]);
         }
 
